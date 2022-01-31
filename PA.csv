@@ -1,0 +1,26 @@
+  ,zoom link,date of the experiment,password,demographic completed?,Time taken to practice Character Recorder (includ. demo),,Time taken Excel,,Time taken CR,,,,,excel sent?,CR files sent?,,Internet Issues?,
+,,,,,start,end,start,end,start,used others values?,use my terms,refer back to tutorial,end,,,zip,"(small, major)",
+,,,,,down to seconds,,,,,(# of times),(# of times),(# of times),,,,,,
+m01,,,,yes,15:36:03,15:50:03,15:27:38,15:32:40,15:50:27,,,,16:02:46,Yes,,Yes,,
+m02,,,,yes,15:13:11,15:24:47,15:06:33,15:11:36,15:25:09,,,,15:42:14,Yes,,Yes,,
+p01,,,123456,yes,15:47:30,15:57:37,15:41:21,15:46:25,16:00:00,,,,16:14:10,Yes,,Yes,,
+p03,,,123456,yes,16:15:42,16:36:10,16:05:45,16:10:37,16:38:51,,,,16:51:00,Yes,,NA,small delays,
+p04,,,182367,yes,14:10:06,14:24:08,14:04:48,14:08:36,14:26:26,,,,14:34:06,Yes,,NA,perfect,
+p09,853 5879 4298,11/02/2021,123456,yes,7:42,7:52,,7:42,7:52,1,,,,,,,,
+p08,853 5879 4298,11/02/2021,123456,yes,7:41,7:48,7:34,7:41,7:48,0,0,,7:58,,,,,
+s111,https://arizona.zoom.us/j/86128446911,12/01/2021,Holypass1,yes,9:10:55,9:28:05,9:04:30,9:09:13,9:30:15,1,1,1,9:48:09,Yes,,Yes,perfect,"gutter shape was a deprecated term in the ontology. After the exp, hong updated the ontology and the questionnaire (difficulties encountered when creating a new character)"
+s211,https://arizona.zoom.us/j/83864603074,12/13/2021,523fa9,yes,9:05:16,9:26:26,9:44:09,9:59:51,9:27:30,0,0,0,9:42:28,Yes,,Yes,perfect,
+s221,https://arizona.zoom.us/j/89572612889,12/22/2021,q9esti3,yes,11:03:09,11:26:50,11:50:25,11:59:04,11:39:04,3,0,0,11:49:26,Yes,Yes,,perfect,"there was a long pause about 10 min during the session as if the participant were waiting for next instruction. Tutorial didn't expert file (seems to be a one-time system malfunction, don't know the reason)"
+s118,https://arizona.zoom.us/j/87875581021,12/27/2021,Password,yes,12:09:54,12:29:06,12:01:20,12:07:54,12:30:22,0,0,0,12:40:41,yes,Yes,,perfect,
+s229,https://arizona.zoom.us/j/87059122445,12/27/2021,123456,yes,12:03:57,12:23:33,12:24:43,12:29:13,12:29:20,3,1,0,12:42:15,yes,,Yes,perfect,The participant didn't follow the task sheet sequences
+s122,https://arizona.zoom.us/j/89724531720,01/05/2022,tfthp8,yes,10:14:28,10:30:13,10:05:20,10:11:24,10:31:15,0,0,0,10:44:41,yes,,Yes,perfect,
+s115,https://arizona.zoom.us/j/88922045103,01/06/2022,Mollie,yes,9:14:16,9:29:30,9:05:43,9:12:39,9:31:08,0,0,1,9:40:48,yes,,Yes,perfect,
+s217,https://arizona.zoom.us/j/81615929900,01/06/2022,Sadie123,yes,12:03:44,12:33:31,12:56:06,13:01:55,12:37:56,4,0,0,12:55:33,yes,,Yes,perfect,
+s112, https://arizona.zoom.us/j/83378441308,01/06/2022,Skipper27#,yes,12:16:51,12:37:55,12:05:35,12:13:55,12:43:10,0,1,1,12:59:03,yes,,Yes,perfect,
+s228,https://arizona.zoom.us/j/89031322940,01/07/2022,poiuy_00,yes,9:13:31,9:33:01,9:37:17,10:02:51,10:04:30,2,1,0,10:15:28,yes,,Yes,perfect,participant didn't open screen share on time
+s213,https://arizona.zoom.us/j/87221848109,01/07/2022,winter,yes,13:02:56,13:18:30,13:25:20,13:30:23,13:33:10,0,0,0,13:38:12,yes,,yes,perfect,participant didn't finish excel and task like sample
+s121,https://arizona.zoom.us/j/84246901790,01/08/2022,oa4425,yes,11:06:48,11:21:35,11:00:30,11:04:40,11:24:33,4,0,1,11:36:04,yes,Yes,,perfect,
+s214,https://arizona.zoom.us/j/88998554961,01/10/2022,Sunflower,yes,12:04:07,12:24:22,12:42:19,12:49:25,12:26:03,5,0,0,12:39:26,yes,,yes,perfect,
+s113,https://arizona.zoom.us/j/85058780954,01/10/2022,studytest,yes,14:12:33,14:27:30,14:03:09,14:10:48,14:29:26,5,0,0,14:40:20,yes,,yes,perfect,
+s127,https://arizona.zoom.us/j/89610334473,01/12/2022,61820,yes,13:10:41,13:27:56,13:04:23,13:10:22,13:29:56,6,0,3,13:55:15,yes,,yes,perfect,
+s212,https://arizona.zoom.us/j/85317440591,01/13/2022,collabria345,yes,8:04:03,8:17:50,8:30:15,8:34:00,8:20:10,6,0,0,8:29:00,yes,,yes,perfect,
