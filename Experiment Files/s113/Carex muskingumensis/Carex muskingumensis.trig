@@ -1,0 +1,78 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix iao: <http://purl.obolibrary.org/obo/iao.owl#>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix obi: <http://purl.obolibrary.org/obo/obi.owl#>.
+@prefix uo: <http://purl.obolibrary.org/obo/uo.owl#>.
+@prefix ncbi: <https://www.ncbi.nlm.nih.gov/Taxonomy#>.
+@prefix mo: <http://biosemantics.arizona.edu/ontologies/modifierlist#>.
+@prefix : <http://biosemantics.arizona.edu/ontologies/carex#>.
+@prefix kb: <http://biosemantics.arizona.edu/kb/carex#>.
+@prefix data: <http://biosemantics.arizona.edu/kb/data#>.
+@prefix app: <http://shark.sbs.arizona.edu/chrecorder#>.
+
+@prefix cms1: <http://biosemantics.arizona.edu/kb/carex/muskingumensis/Sample1#>.
+
+@prefix cms2: <http://biosemantics.arizona.edu/kb/carex/muskingumensis/Sample2#>.
+
+data:graph_carex_muskingumensis_s113 {
+kb:CarexMuskingumensisSample1 rdf:label "Sample1 for Carex muskingumensis";
+    rdf:id "some_Unique_ID_4_This_Sample";
+    iao:is_about ncbi:txid240673;
+    :specimen_of :Carex_Muskingumensis;
+    a obi:specimen;
+    :has_part cms1:stem.
+cms1:stem a :stem;
+    :has_quality cms1:length_of_stem.
+cms1:length_of_stem a :length_of_stem;
+    :has_value "40"^^xsd:float;
+    :has_unit uo:cm.
+kb:CarexMuskingumensisSample1 :has_part cms1:stem.
+cms1:stem a :stem;
+    :has_quality cms1:visibility_of_stem.
+cms1:visibility_of_stem a :visibility_of_stem;
+    :has_value :conspicious.
+kb:CarexMuskingumensisSample1 :has_part cms1:sheath_summit.
+cms1:sheath_summit a :sheath_summit;
+    :has_quality cms1:color_of_sheath_summit.
+cms1:color_of_sheath_summit a :color_of_sheath_summit;
+    :has_hue_value :red_brown.
+cms1:sheath_summit :has_quality cms1:shape_of_sheath_summit.
+cms1:shape_of_sheath_summit a :shape_of_sheath_summit;
+    :has_value :U_shaped.
+kb:CarexMuskingumensisSample1 :has_part cms1:inflorescence_unit.
+cms1:inflorescence_unit a :inflorescence_unit;
+    :has_quality cms1:number_of_inflorescence_units.
+cms1:number_of_inflorescence_units a :number_of_inflorescence_units;
+    :has_value "5"^^xsd:float.
+cms1:inflorescence_unit :has_quality cms1:shape_of_inflorescence_unit.
+cms1:shape_of_inflorescence_unit a :shape_of_inflorescence_unit;
+    :has_value :lancehead_shaped.
+kb:CarexMuskingumensisSample2 rdf:label "Sample2 for Carex muskingumensis";
+    rdf:id "some_Unique_ID_4_This_Sample";
+    iao:is_about ncbi:txid240673;
+    :specimen_of :Carex_Muskingumensis;
+    a obi:specimen;
+    :has_part cms2:stem.
+cms2:stem a :stem;
+    :has_quality cms2:length_of_stem.
+cms2:length_of_stem a :length_of_stem;
+    :has_value "100"^^xsd:float;
+    :has_unit uo:cm.
+cms2:sheath_summit :has_quality cms2:color_of_sheath_summit.
+cms2:color_of_sheath_summit a :color_of_sheath_summit;
+    :has_hue_value :red_brown.
+cms2:sheath_summit :has_quality cms2:shape_of_sheath_summit.
+cms2:shape_of_sheath_summit a :shape_of_sheath_summit;
+    :has_value :gutter_shape.
+cms2:inflorescence_unit :has_quality cms2:number_of_inflorescence_units.
+cms2:number_of_inflorescence_units a :number_of_inflorescence_units;
+    :has_value "10"^^xsd:float.
+cms2:inflorescence_unit :has_quality cms2:shape_of_inflorescence_unit.
+cms2:shape_of_inflorescence_unit a :shape_of_inflorescence_unit;
+    :has_value :lanceoloid
+}
+data:graph_carex_muskingumensis_s113 dc:creator app:s113;
+	:export_date "2022-01-10T01:40:18"^^xsd:dateTime.
