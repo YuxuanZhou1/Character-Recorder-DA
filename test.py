@@ -8,7 +8,6 @@ def add(f):
     x = input("Enter user ID:")
     person["ID"] = x
     person["Excel"] = {}
-    person["CR"] = {}
 
     y = int(input("How many Excel mistakes: "))
     person["Excel"]["Mistake"] = y
@@ -19,20 +18,10 @@ def add(f):
             z = input("Please input wrong answer: ")
             person["Excel"]["Detail-" + str(i)]["user's answer"] = z
             q = input("Please input correct answer: ")
-            person["Excel"]["Detail-" + str(i)]["correct answer"] = q
-
-    s = int(input("How many CR mistakes: "))
-    person["CR"]["Mistake"] = s
-
-    if s >= 1:
-        for i in range(1, y+1):
-            person["CR"]["Detail-" + str(i)] = {}
-            z = input("Please input wrong answer: ")
-            person["CR"]["Detail-" + str(i)]["user's answer"] = z
-            q = input("Please input correct answer: ")
-            person["CR"]["Detail-" + str(i)]["correct answer"] = q
+            person["Excel"]["Detail-" + str(i)]["correct answer"] = q        
 
     print(person)
+
     a['users'].append(person)
 
     with open(f, 'w') as c:
@@ -48,7 +37,9 @@ def delete(f):
         if a['users'][i]['ID'] == ID_name:
             del a['users'][i]
             break
-        
+        else:
+            print("we don't have this ID")
+
     with open(f, 'w') as c:
         json.dump(a,  c, indent=4, separators = (',', ':'))
 
@@ -60,7 +51,7 @@ def show(f):
 
 
 def main():
-    file_name = "mistake.json"
+    file_name = "1.json"
 
     print("###Select your option (input number): ###")
     print("1> Add")
@@ -84,5 +75,4 @@ def main():
             choices = int(input())
 
     print("Thank you for your using!")
-
 main()
