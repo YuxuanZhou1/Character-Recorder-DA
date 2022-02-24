@@ -1,9 +1,12 @@
 import json
+import re
 
 def add(f):
+    # open json files and load data
     data = open(f)
     a = json.load(data)
 
+    # set dictionary for storing data
     person = {}
     x = input("Enter user ID:")
     person["ID"] = x
@@ -13,6 +16,8 @@ def add(f):
     y = int(input("How many Excel mistakes: "))
     person["Excel"]["Mistake"] = y
 
+    # if there are more than 1 mistake, them user should typing where they made mistake
+    # and what is the correct answer
     if y >= 1:
         for i in range(1, y+1):
             person["Excel"]["Detail-" + str(i)] = {}
@@ -32,9 +37,11 @@ def add(f):
             q = input("Please input correct answer: ")
             person["CR"]["Detail-" + str(i)]["correct answer"] = q
 
+    # print and add the new matriex into the dictionary (person)
     print(person)
     a['users'].append(person)
 
+    # dump the dictionary into json files
     with open(f, 'w') as c:
         json.dump(a,  c, indent=4, separators = (',', ':'))
 
@@ -44,11 +51,13 @@ def delete(f):
 
     ID_name = input("Please input the ID you want to delete:")
 
+    # search users Id and delete the whole array
     for i in range(len(a['users'])):
         if a['users'][i]['ID'] == ID_name:
             del a['users'][i]
             break
-        
+
+    # dump the new dictionary into the json files
     with open(f, 'w') as c:
         json.dump(a,  c, indent=4, separators = (',', ':'))
 
@@ -56,7 +65,23 @@ def delete(f):
 def show(f):
     data = open(f)
     a = json.load(data)
-    print(a)
+
+    how_show = input("Show all array, show one array or show array ID (Please type all, ID name or ID):")
+
+    if how_show == str("all"):
+    # show the current data in the files
+        print(a)
+    elif how_show.lower() == str("id"):
+        id = []
+        for i in range(len(a['users'])):
+            id.append(a['users'][i]['ID'])
+        print(id)
+    else:
+    # show the specific data based on the ID
+        for i in range(len(a['users'])):
+            if a['users'][i]['ID'] == how_show:
+                print(a['users'][i])
+                break
 
 
 def main():
@@ -70,7 +95,7 @@ def main():
 
     choices = int(input())
 
-    while choices < 4:
+    while choices < 5:
         if choices == 1:
             add(file_name)
             choices = int(input())
